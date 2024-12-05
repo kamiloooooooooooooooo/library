@@ -1,7 +1,7 @@
 
 # Library Management System
 
-A web-based Library Management System to manage library operations such as book cataloging, user management, and borrowing records. Built using PHP and Composer for dependency management.
+>A web-based Library Management System to manage library operations such as book cataloging, user management, and borrowing records. Built using PHP and Composer for dependency management.
 
 ## Features
 - **User Management**: Register, login, and manage user profiles.
