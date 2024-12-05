@@ -3,6 +3,42 @@
 
 >A web-based Library Management System to manage library operations such as book cataloging, user management, and borrowing records. Built using PHP and Composer for dependency management.
 
+## Frameworks/Libraries:
+- Uses frameworks like Slim (a PHP micro-framework) and Pimple (for dependency injection).
+- Includes JWT (JSON Web Token) for authentication.
+
+## Key Directories/Files:
+- ```bashpublic/index.php```: Likely the entry point for the API.
+- ```bashsrc/```: Contains application-specific logic.
+- ```bashvendor/```: Contains third-party dependencies (Composer-based).
+
+>The application is built using the Slim framework with support for JWT-based authentication. The endpoints include functionalities for managing users, authors, books, and their relationships.
+
+## API Endpoints:
+1. User Management:
+- ```basPOST /user/register```: Register a new user.
+- ```basPOST /user/auth```: Authenticate user and issue a JWT token.
+
+2. Author Management:
+- ```basPOST /authors```: Add a new author.
+- ```basGET /authors/get```: Retrieve all authors.
+- ```basPUT /authors/update/{id}```: Update an author's information.
+- ```basDELETE /authors/delete/{id}```: Delete an author.
+
+3. Book Management:
+- ```basPOST /books```: Add a new book.
+- ```basGET /books/get```: Retrieve all books.
+- ```basPUT /books/update/{id}```: Update a book's details.
+- ```basDELETE /books/delete/{id}```: Delete a book.
+
+4. Book-Author Relationships:
+- ```basPOST /books_authors```: Create book-author relationships.
+- ```basGET /books_authors/get```: Retrieve all book-author relationships.
+- ```basDELETE /books_authors/delete/{id}```: Delete a book-author relationship.
+
+5. Utility:
+- Tokens are validated, and a new token is issued for every successful request.
+
 ## Features
 - **User Management**: Register, login, and manage user profiles.
 - **Book Cataloging**: Add, edit, and search books.
